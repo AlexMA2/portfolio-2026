@@ -22,7 +22,7 @@ export const INITIAL_TIMELINE_ITEMS: TimelineItem[] = [
     endYear: 2023,
     type: 'education',
     description: [
-      'Committed to full academic software engineering syllabus, graduating in upper quintile by focusing on database administration, systems designs, and compiled languages.'
+      'Committed to full academic software engineering syllabus, graduating with high grades by focusing on web development, systems designs, and databases administration.'
     ]
   },
   {

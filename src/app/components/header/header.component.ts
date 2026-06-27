@@ -21,12 +21,12 @@ export class HeaderComponent implements OnInit {
   isDropdownOpen = signal<boolean>(false);
 
   languages = signal<LanguageOption[]>([
-    { code: 'es', label: 'Español', flagClass: '🇪🇸' },
-    { code: 'en', label: 'English', flagClass: '🇺🇸' },
-    { code: 'pt', label: 'Português', flagClass: '🇧🇷' }
+    { code: 'es', label: 'Español', flagClass: 'es' },
+    { code: 'en', label: 'English', flagClass: 'us' },
+    { code: 'pt', label: 'Português', flagClass: 'br' }
   ]);
 
-  constructor(private translocoService: TranslocoService) {}
+  constructor(private translocoService: TranslocoService) { }
 
   ngOnInit() {
     if (typeof window !== 'undefined') {
