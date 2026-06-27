@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Disponible para Trabajo Remoto",
+    "title_1": "Construyendo Aplicaciones",
+    "title_2": "Full Stack de Alto Rendimiento",
+    "subtitle": "Ingeniero de Software especializado en arquitecturas web/móviles escalables, Angular 19+, React, NestJS, .NET e integración con AWS.",
+    "desc": "Hola, soy Alex Sebastian Mamani Acurio. Diseño y desarrollo interfaces modulares, creo extensiones de navegador personalizadas para optimizar flujos de integración continua e integro pasarelas complejas (Stripe, Checkr) para crear herramientas robustas.",
+    "cta_contact": "Contacto",
+    "cta_projects": "Ver Proyectos"
+  },
+  "skills": {
+    "title": "Tech-Stack Skill Tree",
+    "subtitle": "Haga clic en cualquier nodo para ver detalles, historial de uso y conexiones tecnológicas en el ciclo de desarrollo.",
+    "all": "Todas las Tecnologías",
+    "frontend": "Frontend",
+    "backend": "Backend y Nube",
+    "testing": "Testing y Calidad",
+    "productivity": "IA y DevOps",
+    "experience_title": "Experiencia Práctica",
+    "ecosystem_title": "Ecosistema Conectado"
+  },
+  "timeline": {
+    "title": "Cronograma de Experiencia",
+    "subtitle": "Línea de tiempo horizontal tipo Gantt. Seleccione cualquier barra para ver los logros detallados bajo la fórmula XYZ de Google.",
+    "jump_to": "Ir al año:",
+    "details_updated": "Detalles actualizados abajo para:",
+    "impact_title": "Impacto y Resultados",
+    "desde": "Desde",
+    "hasta": "Hasta",
+    "present": "Presente"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Una selección de mis trabajos recientes, incluyendo herramientas de código abierto y módulos en desarrollo (IN_PROGRESS).",
+    "all": "Todos los Proyectos",
+    "completed": "Completados",
+    "in_progress": "En Progreso",
+    "repository": "Código Fuente",
+    "demo": "Demo en Vivo"
+  },
+  "contact": {
+    "title": "Ponerse en Contacto",
+    "subtitle": "¿Tiene un proyecto, vacante o desea saludar? Envíe un mensaje o comuníquese a través de mis enlaces directos.",
+    "info_title": "Información de Contacto",
+    "info_desc": "No dude en comunicarse conmigo por teléfono, correo electrónico o GitHub. Siempre estoy abierto a explorar oportunidades.",
+    "label_name": "Nombre Completo",
+    "label_email": "Correo Electrónico",
+    "label_message": "Mensaje",
+    "placeholder_name": "Su nombre",
+    "placeholder_email": "correo@ejemplo.com",
+    "placeholder_message": "Cuéntame sobre tu proyecto...",
+    "submit": "Enviar Mensaje",
+    "success_title": "¡Mensaje Enviado!",
+    "success_desc": "Gracias por escribir. Me pondré en contacto con usted lo antes posible.",
+    "err_name": "El nombre es obligatorio.",
+    "err_email": "Ingrese un correo electrónico válido.",
+    "err_msg": "El mensaje es obligatorio.",
+    "copyright": "© 2026 Alex Mamani. Todos los derechos reservados."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for Remote Work",
+    "title_1": "Building High-Performance",
+    "title_2": "Full Stack Applications",
+    "subtitle": "Software Engineer specializing in scalable web/mobile architectures, Angular 19+, React, NestJS, .NET, and AWS infrastructure integration.",
+    "desc": "Hi, I'm Alex Sebastian Mamani Acurio. I design and build modular interfaces, create custom browser extensions to optimize CI pipelines, and integrate complex third-party features (Stripe, Checkr) to build robust developer tooling and digital platforms.",
+    "cta_contact": "Get In Touch",
+    "cta_projects": "View Projects"
+  },
+  "skills": {
+    "title": "Tech-Stack Skill Tree",
+    "subtitle": "Click on any node to view details, usage history, and how technologies connect across the lifecycle.",
+    "all": "All Technologies",
+    "frontend": "Frontend",
+    "backend": "Backend & Cloud",
+    "testing": "Testing & Quality",
+    "productivity": "AI & DevOps",
+    "experience_title": "Practical Experience",
+    "ecosystem_title": "Connected Ecosystem"
+  },
+  "timeline": {
+    "title": "Journey Chronology",
+    "subtitle": "Horizontal Gantt-style timeline. Choose any bar to expand detailed impacts under Google's XYZ formula.",
+    "jump_to": "Go to year:",
+    "details_updated": "Details updated below for:",
+    "impact_title": "Impact & Results",
+    "desde": "Since",
+    "hasta": "To",
+    "present": "Present"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my recent work, including open-source tools and active development modules",
+    "all": "All Projects",
+    "completed": "Completed",
+    "in_progress": "In Progress",
+    "repository": "Repository",
+    "demo": "Live Demo"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project, job opening, or want to say hello? Drop a message or reach out through my direct links.",
+    "info_title": "Contact Information",
+    "info_desc": "Feel free to contact me via phone, email, or GitHub. I am always open to exploring new engineering opportunities.",
+    "label_name": "Full Name",
+    "label_email": "Email Address",
+    "label_message": "Message",
+    "placeholder_name": "Your name",
+    "placeholder_email": "you@example.com",
+    "placeholder_message": "Tell me about your project...",
+    "submit": "Send Message",
+    "success_title": "Message Sent!",
+    "success_desc": "Thank you for reaching out. I'll get back to you shortly.",
+    "err_name": "Name is required.",
+    "err_email": "Provide a valid email.",
+    "err_msg": "Message is required.",
+    "copyright": "© 2026 Alex Mamani. All rights reserved."
+  }
+}

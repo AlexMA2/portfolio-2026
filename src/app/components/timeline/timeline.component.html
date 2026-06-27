@@ -1,0 +1,185 @@
+<section id="experience" class="experience-timeline">
+  <div class="experience-timeline__header">
+    <h2 class="experience-timeline__title">{{ 'timeline.title' | transloco }}</h2>
+    <p class="experience-timeline__subtitle">{{ 'timeline.subtitle' | transloco }}</p>
+  </div>
+
+  <!-- Navigator and Indicators Control Bar -->
+  <div class="experience-timeline__controls-row">
+    <!-- Left: Year Navigation controls (Carousel with inline input) -->
+    <div class="experience-timeline__navigator">
+      <span class="experience-timeline__navigator-label">{{ 'timeline.jump_to' | transloco }}</span>
+      
+      <!-- Arrow Carousel Navigator with Input -->
+      <div class="experience-timeline__carousel">
+        <button 
+          (click)="prevYear()" 
+          [disabled]="activeYear() <= minYear" 
+          class="experience-timeline__arrow-btn"
+          type="button"
+          aria-label="Previous Year"
+        >
+          &larr;
+        </button>
+        
+        <!-- Year Input replacing the plain text active-year -->
+        <input 
+          type="number" 
+          [value]="activeYear()" 
+          (blur)="onYearInputChanged($event)" 
+          (keydown.enter)="onYearInputChanged($event)" 
+          class="experience-timeline__active-year-input"
+          aria-label="Current Year Input"
+        >
+
+        <button 
+          (click)="nextYear()" 
+          [disabled]="activeYear() >= maxYear" 
+          class="experience-timeline__arrow-btn"
+          type="button"
+          aria-label="Next Year"
+        >
+          &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Selected Details Arrow Indicator (Button) -->
+    @if (selectedItem(); as active) {
+      <button 
+        (click)="scrollToDetails()"
+        class="experience-timeline__indicator-bar"
+        [class.experience-timeline__indicator-bar--bounce]="animateDetails()"
+        type="button"
+      >
+        <span class="experience-timeline__indicator-text">{{ 'timeline.details_updated' | transloco }} <strong>{{ active.company }}</strong></span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="experience-timeline__indicator-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+        </svg>
+      </button>
+    }
+  </div>
+
+  <!-- Horizontal Gantt Chart Viewer (Listening to Scroll spy and Drag and drop) -->
+  <div 
+    class="experience-timeline__viewport" 
+    (scroll)="onScroll($event)"
+    (mousedown)="onMouseDown($event)"
+    (mousemove)="onMouseMove($event)"
+    (mouseup)="onMouseUp($event)"
+    (mouseleave)="onMouseLeave($event)"
+  >
+    <div class="experience-timeline__chart-wrapper">
+      <div 
+        class="experience-timeline__chart" 
+        [style.height.px]="totalRows() * 95 + 60"
+      >
+        <!-- Grid Vertical Lines for Months -->
+        <div class="experience-timeline__month-lines">
+          @for (mTick of monthsScale(); track mTick.id) {
+            <div 
+              class="experience-timeline__month-line" 
+              [style.left.%]="mTick.left"
+              [attr.data-month]="mTick.month"
+            >
+              <span class="experience-timeline__month-label">{{ mTick.label }}</span>
+            </div>
+          }
+        </div>
+
+        <!-- Grid Vertical Lines for Years -->
+        <div class="experience-timeline__grid-lines">
+          @for (tick of yearsScale(); track tick.year) {
+            <div 
+              class="experience-timeline__grid-line" 
+              [style.left.%]="tick.left"
+            >
+              <span class="experience-timeline__grid-year">{{ tick.year }}</span>
+            </div>
+          }
+        </div>
+
+        <!-- Selected Card Start and End vertical indicators -->
+        @if (selectedItem(); as active) {
+          <div 
+            class="experience-timeline__date-line experience-timeline__date-line--start" 
+            [style.left.%]="active.left"
+          >
+            <span class="experience-timeline__date-line-label">{{ 'timeline.desde' | transloco }}: {{ active.startMonth }}/{{ active.startYear }}</span>
+          </div>
+          <div 
+            class="experience-timeline__date-line experience-timeline__date-line--end" 
+            [style.left.%]="active.left + active.width"
+          >
+            <span class="experience-timeline__date-line-label">{{ 'timeline.hasta' | transloco }}: {{ active.endYear ? active.endMonth + '/' + active.endYear : ('timeline.present' | transloco) }}</span>
+          </div>
+        }
+
+        <!-- Stacking Rows for Cards -->
+        <div class="experience-timeline__tracks">
+          @for (item of positionedItems(); track item.id) {
+            <div 
+              class="experience-timeline__bar"
+              [class.experience-timeline__bar--selected]="selectedItemId() === item.id"
+              [class.experience-timeline__bar--work]="item.type === 'work'"
+              [class.experience-timeline__bar--education]="item.type === 'education'"
+              [style.left.%]="item.left"
+              [style.width.%]="item.width"
+              [style.top.px]="item.row * 95 + 40"
+              (click)="selectItem(item.id)"
+            >
+              <div class="experience-timeline__bar-content">
+                <span class="experience-timeline__bar-role">{{ item.role }}</span>
+                <span class="experience-timeline__bar-company">{{ item.company }}</span>
+                <span class="experience-timeline__bar-date">
+                  @if (item.countryCode) {
+                    <span class="fi fi-{{ item.countryCode }} experience-timeline__bar-flag"></span>
+                  }
+                  {{ item.displayPeriod }}
+                </span>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Card Detailed Panel -->
+  <div class="experience-timeline__details-panel">
+    @if (selectedItem(); as active) {
+      <div 
+        class="experience-timeline__details-card"
+        [class.experience-timeline__details-card--pulse]="animateDetails()"
+      >
+        <div class="experience-timeline__details-header">
+          <div>
+            <span class="experience-timeline__details-type">{{ active.type | uppercase }}</span>
+            <h3 class="experience-timeline__details-title">{{ active.role }}</h3>
+            <div class="experience-timeline__details-meta">
+              <span class="experience-timeline__details-company">{{ active.company }}</span>
+              <span class="experience-timeline__details-divider">|</span>
+              <span class="experience-timeline__details-location">
+                @if (active.countryCode) {
+                  <span class="fi fi-{{ active.countryCode }} experience-timeline__details-flag"></span>
+                }
+                {{ active.location }}
+              </span>
+              <span class="experience-timeline__details-divider">|</span>
+              <span class="experience-timeline__details-period">{{ active.displayPeriod }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="experience-timeline__details-body">
+          <h4 class="experience-timeline__details-subtitle">{{ 'timeline.impact_title' | transloco }}</h4>
+          <ul class="experience-timeline__bullet-list">
+            @for (bullet of active.description; track bullet) {
+              <li class="experience-timeline__bullet-item">{{ bullet }}</li>
+            }
+          </ul>
+        </div>
+      </div>
+    }
+  </div>
+</section>

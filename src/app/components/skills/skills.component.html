@@ -1,0 +1,101 @@
+<section id="skills" class="skill-tree">
+  <div class="skill-tree__header">
+    <h2 class="skill-tree__title">{{ 'skills.title' | transloco }}</h2>
+    <p class="skill-tree__subtitle">{{ 'skills.subtitle' | transloco }}</p>
+  </div>
+
+  <!-- Category Filter Bar -->
+  <div class="skill-tree__filter-bar">
+    <button 
+      (click)="setCategory('all')" 
+      [class.skill-tree__filter-btn--active]="activeCategory() === 'all'"
+      class="skill-tree__filter-btn"
+    >
+      {{ 'skills.all' | transloco }}
+    </button>
+    <button 
+      (click)="setCategory('frontend')" 
+      [class.skill-tree__filter-btn--active]="activeCategory() === 'frontend'"
+      class="skill-tree__filter-btn"
+    >
+      {{ 'skills.frontend' | transloco }}
+    </button>
+    <button 
+      (click)="setCategory('backend')" 
+      [class.skill-tree__filter-btn--active]="activeCategory() === 'backend'"
+      class="skill-tree__filter-btn"
+    >
+      {{ 'skills.backend' | transloco }}
+    </button>
+    <button 
+      (click)="setCategory('testing')" 
+      [class.skill-tree__filter-btn--active]="activeCategory() === 'testing'"
+      class="skill-tree__filter-btn"
+    >
+      {{ 'skills.testing' | transloco }}
+    </button>
+    <button 
+      (click)="setCategory('productivity')" 
+      [class.skill-tree__filter-btn--active]="activeCategory() === 'productivity'"
+      class="skill-tree__filter-btn"
+    >
+      {{ 'skills.productivity' | transloco }}
+    </button>
+  </div>
+
+  <!-- Interactive Area Layout -->
+  <div class="skill-tree__layout">
+    <!-- Visual Graph Canvas -->
+    <div class="skill-tree__canvas">
+      <div class="skill-tree__nodes-grid">
+        @for (node of filteredSkills(); track node.id) {
+          <div 
+            (click)="selectNode(node.id)"
+            class="skill-tree__node"
+            [class.skill-tree__node--selected]="selectedNodeId() === node.id"
+            [class.skill-tree__node--connected]="selectedNodeId() !== node.id && isNodeConnected(node.id)"
+            [class.skill-tree__node--dimmed]="selectedNodeId() !== node.id && !isNodeConnected(node.id)"
+          >
+            <div class="skill-tree__node-accent" [attr.data-category]="node.category"></div>
+            <div class="skill-tree__node-content">
+              <span class="skill-tree__node-name">{{ node.name }}</span>
+              <span class="skill-tree__node-level" [attr.data-level]="node.level">{{ node.level }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Details Pane -->
+    <div class="skill-tree__details">
+      @if (selectedNode(); as active) {
+        <div class="skill-tree__details-card">
+          <div class="skill-tree__details-header">
+            <span class="skill-tree__details-category">{{ active.category | uppercase }}</span>
+            <span class="skill-tree__details-badge" [attr.data-level]="active.level">{{ active.level }}</span>
+          </div>
+          
+          <h3 class="skill-tree__details-title">{{ active.name }}</h3>
+          
+          <p class="skill-tree__details-desc">{{ active.description }}</p>
+
+          <div class="skill-tree__details-section">
+            <h4 class="skill-tree__details-subtitle">{{ 'skills.experience_title' | transloco }}</h4>
+            <p class="skill-tree__details-content">{{ active.experience }}</p>
+          </div>
+
+          <div class="skill-tree__details-section">
+            <h4 class="skill-tree__details-subtitle">{{ 'skills.ecosystem_title' | transloco }}</h4>
+            <div class="skill-tree__details-connections">
+              @for (connId of active.connections; track connId) {
+                <span class="skill-tree__details-conn-tag" (click)="selectNode(connId)">
+                  {{ connId }}
+                </span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

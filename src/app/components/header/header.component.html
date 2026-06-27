@@ -1,0 +1,83 @@
+<header class="portfolio-header">
+  <div class="portfolio-header__container">
+    <div class="portfolio-header__brand" (click)="scrollToSection('hero')">
+      <span class="portfolio-header__logo-text">Alex Sebastian</span>
+      <span class="portfolio-header__logo-sub">Mamani Acurio</span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="portfolio-header__nav">
+      <ul class="portfolio-header__nav-list">
+        <li class="portfolio-header__nav-item">
+          <a (click)="scrollToSection('about')" class="portfolio-header__nav-link">{{ 'nav.about' | transloco }}</a>
+        </li>
+        <li class="portfolio-header__nav-item">
+          <a (click)="scrollToSection('skills')" class="portfolio-header__nav-link">{{ 'nav.skills' | transloco }}</a>
+        </li>
+        <li class="portfolio-header__nav-item">
+          <a (click)="scrollToSection('experience')" class="portfolio-header__nav-link">{{ 'nav.experience' | transloco }}</a>
+        </li>
+        <li class="portfolio-header__nav-item">
+          <a (click)="scrollToSection('projects')" class="portfolio-header__nav-link">{{ 'nav.projects' | transloco }}</a>
+        </li>
+        <li class="portfolio-header__nav-item">
+          <a (click)="scrollToSection('contact')" class="portfolio-header__nav-link">{{ 'nav.contact' | transloco }}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Actions -->
+    <div class="portfolio-header__actions">
+      <!-- Language Selector -->
+      <div class="portfolio-header__lang-container">
+        <button 
+          (click)="toggleDropdown()" 
+          class="portfolio-header__lang-trigger"
+          aria-haspopup="listbox"
+          [attr.aria-expanded]="isDropdownOpen()"
+          aria-label="Select Language"
+        >
+          <span class="portfolio-header__lang-flag">{{ getActiveLangOption().flagClass }}</span>
+          <span class="portfolio-header__lang-code">{{ getActiveLangOption().code.toUpperCase() }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="portfolio-header__lang-arrow" [class.portfolio-header__lang-arrow--open]="isDropdownOpen()">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        @if (isDropdownOpen()) {
+          <div class="portfolio-header__lang-dropdown animate-fade-in" role="listbox">
+            @for (lang of languages(); track lang.code) {
+              <div 
+                (click)="selectLanguage(lang.code)"
+                class="portfolio-header__lang-option"
+                [class.portfolio-header__lang-option--active]="lang.code === currentLang()"
+                role="option"
+                [attr.aria-selected]="lang.code === currentLang()"
+              >
+                <span class="portfolio-header__lang-flag">{{ lang.flagClass }}</span>
+                <span class="portfolio-header__lang-label">{{ lang.label }}</span>
+              </div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Dark/Light Theme Button -->
+      <button 
+        (click)="toggleTheme()" 
+        class="portfolio-header__theme-toggle" 
+        [attr.aria-label]="isDarkMode() ? 'Switch to light mode' : 'Switch to dark mode'"
+      >
+        @if (isDarkMode()) {
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="portfolio-header__theme-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.58 1.58m12.42 12.42l1.58 1.58M3 12h2.25m13.5 0H21M5.78 18.22l1.58-1.58M18.22 5.78l1.58-1.58M12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Z" />
+          </svg>
+        } @else {
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="portfolio-header__theme-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+        }
+      </button>
+    </div>
+  </div>
+</header>
