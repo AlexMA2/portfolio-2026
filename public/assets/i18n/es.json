@@ -11,7 +11,7 @@
     "title_1": "Construyendo Aplicaciones",
     "title_2": "Full Stack de Alto Rendimiento",
     "subtitle": "Ingeniero de Software especializado en arquitecturas web/móviles escalables, Angular 19+, React, NestJS, .NET e integración con AWS.",
-    "desc": "Hola, soy Alex Sebastian Mamani Acurio. Diseño y desarrollo interfaces modulares, creo extensiones de navegador personalizadas para optimizar flujos de integración continua e integro pasarelas complejas (Stripe, Checkr) para crear herramientas robustas.",
+    "desc": "Hola, soy Alex Sebastian Mamani Acurio. Diseño y desarrollo interfaces modulares, creo extensiones de navegador personalizadas para optimizar flujos de integración continua e integro pasarelas complejas para crear herramientas robustas.",
     "cta_contact": "Contacto",
     "cta_projects": "Ver Proyectos"
   },
@@ -62,6 +62,21 @@
     "err_name": "El nombre es obligatorio.",
     "err_email": "Ingrese un correo electrónico válido.",
     "err_msg": "El mensaje es obligatorio.",
-    "copyright": "© 2026 Alex Mamani. Todos los derechos reservados."
+    "copyright": "© 2026 Alex Mamani. Todos los derechos reservados.",
+    "linkedin": "LinkedIn",
+    "linkedin_desc": "Perfil y red profesional",
+    "linkedin_action": "Conectemos",
+    "github": "GitHub",
+    "github_desc": "Trabajos de código abierto y repositorios",
+    "github_action": "Ver Repositorios",
+    "whatsapp": "WhatsApp",
+    "whatsapp_desc": "Chat rápido y mensaje instantáneo",
+    "whatsapp_action": "Enviar Mensaje",
+    "email": "Correo Electrónico",
+    "email_desc": "Consultas detalladas de proyectos",
+    "email_action": "Enviar Correo",
+    "whatsapp_msg": "¡Hola Alex! Vi tu portafolio y me gustaría ponerme en contacto contigo.",
+    "email_subject": "Consulta desde el Portafolio",
+    "email_body": "Hola Alex,\n\nVi tu portafolio y me gustaría ponerme en contacto con respecto a..."
   }
 }

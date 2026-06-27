@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+# Host: alexmamani.com
+
+# Sitemaps
+# Sitemap: https://alexmamani.com/sitemap.xml

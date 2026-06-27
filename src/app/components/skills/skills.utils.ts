@@ -60,7 +60,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     name: 'Node.js',
     category: 'backend',
     level: 'Advanced',
-    description: 'Building fast RESTful APIs and asynchronous backends, including third-party integrations (Stripe, Checkr).',
+    description: 'Building fast RESTful APIs and asynchronous backends, including third-party integrations.',
     connections: ['typescript', 'postgresql', 'mongodb'],
     experience: 'Big Pebble Design, Personal Projects'
   },

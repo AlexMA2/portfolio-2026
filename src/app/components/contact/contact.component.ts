@@ -1,37 +1,25 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { TranslocoModule } from '@ngneat/transloco';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslocoModule],
+  imports: [CommonModule, TranslocoModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  formData = {
-    name: '',
-    email: '',
-    message: ''
-  };
+  private translocoService = inject(TranslocoService);
 
-  isSubmitted = signal<boolean>(false);
+  getWhatsAppLink(): string {
+    const message = this.translocoService.translate('contact.whatsapp_msg');
+    return `https://wa.me/51981292656?text=${encodeURIComponent(message)}`;
+  }
 
-  onSubmit(form: any) {
-    if (form.valid) {
-      this.isSubmitted.set(true);
-      
-      this.formData = {
-        name: '',
-        email: '',
-        message: ''
-      };
-      
-      setTimeout(() => {
-        this.isSubmitted.set(false);
-      }, 5000);
-    }
+  getEmailLink(): string {
+    const subject = this.translocoService.translate('contact.email_subject');
+    const body = this.translocoService.translate('contact.email_body');
+    return `mailto:alex_162001@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 }
