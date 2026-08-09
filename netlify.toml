@@ -1,6 +1,0 @@
-[build]
-  command = "pnpm build"
-  publish = "dist/portfolio-2026/browser"
-
-[build.environment]
-  NPM_FLAGS = "--config.onlyBuiltDependencies[]=@parcel/watcher --config.onlyBuiltDependencies[]=esbuild --config.onlyBuiltDependencies[]=lmdb --config.onlyBuiltDependencies[]=msgpackr-ext --config.onlyBuiltDependencies[]=msgpackr-extract --config.onlyBuiltDependencies[]=sharp"
