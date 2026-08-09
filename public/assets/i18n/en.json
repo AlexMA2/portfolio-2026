@@ -65,13 +65,25 @@
         "description": "Minimalist speed-typing testing simulator for developers. Incorporates source code snippets, speed metrics (WPM, Accuracy), authentication dashboards, and user performance progress records.",
         "subtitle": "Developer Typetest Simulator"
       },
-      "syncroute": {
-        "description": "A cross-platform database synchronization module for Capacitor and web clients. Syncs offline-local SQLite/IndexDB changes with remote PostgreSQL/MongoDB instances using automated conflict resolution and optimized compression.",
-        "subtitle": "Offline-First Mobile & Web Sync Engine"
+      "fintech-playground": {
+        "subtitle": "Building a financial services ecosystem with .NET 10 and Angular 21",
+        "description": "Financial services simulator with authentication, user management, bank accounts, transactions, credit cards, loans, and more. Connected to Azure."
       },
-      "uiforge": {
-        "description": "A visual designer application translating drag-and-drop wireframes directly into standard Angular 19+ standalone components. Generates fully tree-shakable code styled with Tailwind CSS, utilizing schema-based templates.",
-        "subtitle": "AI Angular Visual Builder"
+      "pizza-api-nest": {
+        "subtitle": "RESTful API for pizzeria management",
+        "description": "RESTful API for pizzeria management with NestJS, PostgreSQL, JWT, and AWS. Authentication, user management, products, orders, and more. Connected to AWS."
+      },
+      "auto-from-swagger": {
+        "subtitle": "Automatically generates TypeScript and C# code based on Swagger specification",
+        "description": "Automatically generates TypeScript and C# code based on Swagger specification."
+      },
+      "custom-world-map": {
+        "subtitle": "Map generator with Angular 21 and ThreeJS",
+        "description": "Generates maps with Angular 21 and ThreeJS, for creating custom worlds."
+      },
+      "git-clean-branches": {
+        "subtitle": "Git branch management",
+        "description": "Shell script that analyzes your branches and generates a table with details about them. Includes interactive mode to delete branches if they have already been merged."
       }
     },
     "repository": "Repository",

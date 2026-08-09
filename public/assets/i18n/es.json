@@ -53,7 +53,7 @@
   },
   "projects": {
     "all": "Todos los Proyectos",
-    "completed": "Completados",
+    "completed": "Completado",
     "demo": "Demo en Vivo",
     "in_progress": "En Progreso",
     "items": {
@@ -65,13 +65,25 @@
         "description": "Simulador minimalista de pruebas de mecanografía veloz para desarrolladores. Incorpora fragmentos de código fuente, métricas de velocidad (WPM, precisión), paneles de autenticación y registros de progreso del rendimiento del usuario.",
         "subtitle": "Simulador de Prueba de Mecanografía para Desarrolladores"
       },
-      "syncroute": {
-        "description": "Un módulo de sincronización de base de datos multiplataforma para Capacitor y clientes web. Sincroniza cambios locales offline de SQLite/IndexedDB con instancias remotas de PostgreSQL/MongoDB mediante resolución automática de conflictos y compresión optimizada.",
-        "subtitle": "Motor de Sincronización Móvil y Web Offline-First"
+      "fintech-playground": {
+        "subtitle": "Creando un ecosistema de servicios financieros con .NET 10 y Angular 21",
+        "description": "Simulador de servicios financieros con autenticación, gestión de usuarios, cuentas bancarias, transacciones, tarjetas de crédito, préstamos y más. Conectado a Azure."
       },
-      "uiforge": {
-        "description": "Una aplicación de diseño visual que traduce wireframes drag-and-drop directamente en componentes standalone estándar de Angular 19+. Genera código totalmente tree-shakable estilizado con Tailwind CSS usando plantillas basadas en esquemas.",
-        "subtitle": "Constructor Visual Angular impulsado por IA"
+      "pizza-api-nest": {
+        "subtitle": "API RESTful para la gestión de pizzerías",
+        "description": "API RESTful para la gestión de pizzerías con NestJS, PostgreSQL, JWT y AWS. Autenticación, gestión de usuarios, productos, pedidos y más. Conectado a AWS."
+      },
+      "auto-from-swagger": {
+        "subtitle": "Genera automaticamente código TypeScript y C# con base a la especificación Swagger",
+        "description": "Genera automaticamente código TypeScript y C# con base a la especificación Swagger."
+      },
+      "custom-world-map": {
+        "subtitle": "Generador de mapas con Angular 21 y ThreeJS",
+        "description": "Genera mapas con Angular 21 y ThreeJS, para la creación de mundos propios."
+      },
+      "git-clean-branches": {
+        "subtitle": "Gestión de ramas en Git",
+        "description": "Script hecho en Shell que analiza tus ramas y genera una tabla con detalles sobre estas. Con modo interactivo para eliminar ramas si estas ya fueron mergeadas."
       }
     },
     "repository": "Código Fuente",

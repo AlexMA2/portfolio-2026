@@ -2,22 +2,49 @@ import { Project } from './projects.model';
 
 export const INITIAL_PROJECTS: Project[] = [
   {
-    id: 'syncroute',
-    title: 'SyncRoute',
-    subtitle: 'projects.items.syncroute.subtitle',
+    id: 'fintech-playground',
+    title: 'Fintech Playground',
+    subtitle: 'projects.items.fintech-playground.subtitle',
     status: 'IN_PROGRESS',
-    description: 'projects.items.syncroute.description',
-    technologies: ['TypeScript', 'SQLite', 'IndexedDB', 'Capacitor', 'Node.js', 'RxJS'],
-    githubUrl: 'https://github.com/AlexMA2/syncroute'
+    description: 'projects.items.fintech-playground.description',
+    technologies: ['.NET 10', 'ASP.NET Core', 'Entity Framework Core', 'PostgreSQL', 'JWT', 'Scalar', 'Azure'],
+    githubUrl: 'https://github.com/AlexMA2/fintech-playground-api'
   },
   {
-    id: 'uiforge',
-    title: 'UI-Forge',
-    subtitle: 'projects.items.uiforge.subtitle',
+    id: 'pizza-api-nest',
+    title: 'Pizza API Nest',
+    subtitle: 'projects.items.pizza-api-nest.subtitle',
     status: 'IN_PROGRESS',
-    description: 'projects.items.uiforge.description',
-    technologies: ['Angular 19', 'Tailwind CSS', 'TypeScript', 'Node.js', 'Vite'],
-    githubUrl: 'https://github.com/AlexMA2/ui-forge'
+    description: 'projects.items.pizza-api-nest.description',
+    technologies: ['NestJS', 'Typescript', 'PostgreSQL', 'JWT', 'AWS'],
+    githubUrl: 'https://github.com/AlexMA2/pizza-api-nest'
+  },
+  {
+    id: 'auto-from-swagger',
+    title: 'AutoType (For Swagger)',
+    subtitle: 'projects.items.auto-from-swagger.subtitle',
+    status: 'COMPLETED',
+    description: 'projects.items.auto-from-swagger.description',
+    technologies: ['Chrome Extension', 'Javascript', 'OpenAPI'],
+    githubUrl: 'https://github.com/AlexMA2/auto-from-swagger'
+  },
+  {
+    id: 'custom-world-map',
+    title: 'Custom World Map',
+    subtitle: 'projects.items.custom-world-map.subtitle',
+    status: 'COMPLETED',
+    description: 'projects.items.custom-world-map.description',
+    technologies: ['Angular', 'TurfJS', 'Tailwind CSS', 'ThreeJS', 'Angular Material', 'd3-geo'],
+    githubUrl: 'https://github.com/AlexMA2/custom-world-map'
+  },
+  {
+    id: 'git-clean-branches',
+    title: 'Git Clean Branches',
+    subtitle: 'projects.items.git-clean-branches.subtitle',
+    status: 'COMPLETED',
+    description: 'projects.items.git-clean-branches.description',
+    technologies: ['Shell', 'Git', 'Bash', 'PowerShell', 'Zsh'],
+    githubUrl: 'https://github.com/AlexMA2/git-clean-branches'
   },
   {
     id: 'calculator',
@@ -25,7 +52,7 @@ export const INITIAL_PROJECTS: Project[] = [
     subtitle: 'projects.items.calculator.subtitle',
     status: 'COMPLETED',
     description: 'projects.items.calculator.description',
-    technologies: ['Angular', 'Firebase Auth', 'Firestore', 'GraphQL', 'Tailwind CSS'],
+    technologies: ['Angular', 'Firebase Auth', 'Firestore', 'Stripe', 'Tailwind CSS'],
     link: 'https://thecalculatorgame.netlify.app',
     githubUrl: 'https://github.com/AlexMA2/calculator-game'
   },

@@ -65,13 +65,25 @@
         "description": "Simulador minimalista de teste de velocidade de digitação para desenvolvedores. Incorpora trechos de código-fonte, métricas de velocidade (WPM, precisão), painéis de autenticação e registros de progresso de desempenho do usuário.",
         "subtitle": "Simulador de Teste de Digitação para Desenvolvedores"
       },
-      "syncroute": {
-        "description": "Um módulo de sincronização de banco de dados multiplataforma para Capacitor e clientes web. Sincroniza alterações locais offline do SQLite/IndexedDB com instâncias remotas do PostgreSQL/MongoDB usando resolução automática de conflitos e compressão otimizada.",
-        "subtitle": "Mecanismo de Sincronização Móvel e Web Offline-First"
+      "fintech-playground": {
+        "subtitle": "Criando um ecossistema de serviços financeiros com .NET 10 e Angular 21",
+        "description": "Simulador de serviços financeiros com autenticação, gerenciamento de usuários, contas bancárias, transações, cartões de crédito, empréstimos e muito mais. Conectado ao Azure."
       },
-      "uiforge": {
-        "description": "Uma aplicação de design visual que traduz wireframes do tipo arrastar e soltar diretamente em componentes standalone padrão do Angular 19+. Gera código totalmente tree-shakable estilizado com Tailwind CSS usando modelos baseados em esquema.",
-        "subtitle": "Construtor Visual Angular com IA"
+      "pizza-api-nest": {
+        "subtitle": "API RESTful para gestão de pizzarias",
+        "description": "API RESTful para gestão de pizzarias com NestJS, PostgreSQL, JWT e AWS. Autenticação, gerenciamento de usuários, produtos, pedidos e muito mais. Conectado à AWS."
+      },
+      "auto-from-swagger": {
+        "subtitle": "Gera automaticamente código TypeScript e C# com base na especificação Swagger",
+        "description": "Gera automaticamente código TypeScript e C# com base na especificação Swagger."
+      },
+      "custom-world-map": {
+        "subtitle": "Gerador de mapas com Angular 21 e ThreeJS",
+        "description": "Gera mapas com Angular 21 e ThreeJS, para a criação de mundos próprios."
+      },
+      "git-clean-branches": {
+        "subtitle": "Gerenciamento de branches no Git",
+        "description": "Script feito em Shell que analisa suas branches e gera uma tabela com detalhes sobre elas. Com modo interativo para excluir branches caso já tenham sido mescladas."
       }
     },
     "repository": "Código Fonte",
