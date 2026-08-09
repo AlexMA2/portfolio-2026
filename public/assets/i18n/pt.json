@@ -9,6 +9,8 @@
     "err_email": "Forneça um e-mail válido.",
     "err_msg": "A mensagem é obrigatória.",
     "err_name": "O nome é obrigatório.",
+    "reveal_email": "Mostrar e-mail",
+    "reveal_phone": "Mostrar telefone",
     "github": "GitHub",
     "github_action": "Ver Repositórios",
     "github_desc": "Trabalhos de código aberto e repositórios",
@@ -132,6 +134,10 @@
         "experience": "Big Pebble Design, Invian SAC, LastM Viz Group"
       }
     },
+    "levels": {
+      "advanced": "Avançado",
+      "expert": "Especialista"
+    },
     "productivity": "IA e DevOps",
     "subtitle": "Clique em qualquer nó para ver detalhes, histórico de uso e conexões de tecnologia no ciclo de desenvolvimento.",
     "testing": "Testes e Qualidade",
@@ -149,32 +155,41 @@
         "desc_2": "Reduzi a redundância de código dos desenvolvedores em 25% projetando diretivas personalizadas e abstraindo fluxos de reutilização padrão.",
         "desc_3": "Diminuí o tempo de teste em 20% construindo uma extensão de navegador sob medida para otimizar fluxos de integração contínua.",
         "desc_4": "Reduzi a latência de autenticação de consulta em 30% desenvolvendo uma ferramenta de navegador personalizada para integração com o Swagger.",
+        "location": "EUA (Remoto)",
         "role": "Desenvolvedor Full Stack / Front End"
       },
       "britanico": {
         "desc_1": "Certificado com proficiência avançada em inglês oral e escrito, aprovado com nível de Distinção ao concluir um programa linguístico abrangente de 36 meses.",
+        "location": "Lima, Peru",
         "role": "Inglês Avançado"
       },
       "invian": {
         "desc_1": "Aumentei a adoção da plataforma de clientes em 40% liderando análises gráficas e desenvolvendo componentes dinâmicos com Angular 16 e Tailwind CSS.",
         "desc_2": "Reduzi o custo de criação de modelos visuais em 50% construindo formulários dinâmicos baseados em metadatos e módulos de mapeamento para logística DOOH.",
         "desc_3": "Maximizei a saída do processador de layout, escalando os renders visuais diários em 15% estruturando regras de negócios para formatos DOOH.",
+        "location": "Peru (Remoto)",
         "role": "Desenvolvedor Front End"
       },
       "lastm": {
         "desc_1": "Conquistei mais de 10 mil registros na plataforma projetando, arquitetando e implantando a landing page da empresa em Angular 14 e Firebase.",
         "desc_2": "Criei fluxos de backend de alta disponibilidade, atingindo 99,9% de tempo de atividade utilizando Firebase Functions e Firestore.",
         "desc_3": "Garanti pagamentos monetários seguros, reduzindo o abandono em 18% integrando a API do PayPal e painéis de métricas reativos.",
+        "location": "Coreia do Sul (Remoto)",
         "role": "Desenvolvedor Full Stack"
       },
       "unmsm": {
         "desc_1": "Dedicado ao currículo acadêmico completo de engenharia de software, graduando-me com altas notas focando em desenvolvimento web, design de sistemas e administração de bancos de dados.",
+        "location": "Lima, Peru",
         "role": "Bacharel em Engenharia de Software"
       }
     },
     "jump_to": "Ir para o ano:",
     "present": "Presente",
     "subtitle": "Linha do tempo horizontal tipo Gantt. Selecione qualquer barra para ver as realizações sob a fórmula XYZ do Google.",
-    "title": "Cronograma de Experiência"
+    "title": "Cronograma de Experiência",
+    "types": {
+      "education": "Educação",
+      "work": "Trabalho"
+    }
   }
 }

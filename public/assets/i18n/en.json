@@ -9,6 +9,8 @@
     "err_email": "Provide a valid email.",
     "err_msg": "Message is required.",
     "err_name": "Name is required.",
+    "reveal_email": "Click to show email",
+    "reveal_phone": "Click to show phone",
     "github": "GitHub",
     "github_action": "View Repositories",
     "github_desc": "Open-source work & repositories",
@@ -132,6 +134,10 @@
         "experience": "Big Pebble Design, Invian SAC, LastM Viz Group"
       }
     },
+    "levels": {
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
     "productivity": "AI & DevOps",
     "subtitle": "Click on any node to view details, usage history, and how technologies connect across the lifecycle.",
     "testing": "Testing & Quality",
@@ -149,32 +155,41 @@
         "desc_2": "Reduced developer code redundancy by 25% by designing custom directives and abstract standard reuse workflows.",
         "desc_3": "Decreased testing time by 20% by building a bespoke browser extension to optimize continuous integration flows.",
         "desc_4": "Reduced query authentication latency by 30% by developing a custom browser tool for Swagger integration.",
+        "location": "USA (Remote)",
         "role": "Full Stack / Front End Developer"
       },
       "britanico": {
         "desc_1": "Certified advanced oral and written English proficiency, passing with Distinction level by completing a comprehensive 36-month language program.",
+        "location": "Lima, Peru",
         "role": "Advanced English"
       },
       "invian": {
         "desc_1": "Boosted client platform adoption by 40% by leading graphical analysis and developing dynamic components using Angular 16 and Tailwind CSS.",
         "desc_2": "Reduced visual template creation overhead by 50% by building metadata-driven dynamic forms and mapping modules for DOOH logistics.",
         "desc_3": "Maximized layout processor output, scaling daily visual renders by 15% by structuring business rules for Digital Out-of-Home layouts.",
+        "location": "Peru (Remote)",
         "role": "Front End Developer"
       },
       "lastm": {
         "desc_1": "Acquired 10k+ platform registrations by designing, architecting, and deploying the company's landing page within Angular 14 and Firebase.",
         "desc_2": "Created high-availability backend flows, achieving 99.9% uptime by utilizing Firebase Functions and Firestore.",
         "desc_3": "Secured monetary checkouts, reducing abandonment by 18% by integrating PayPal API and reactive metrics panels.",
+        "location": "South Korea (Remote)",
         "role": "Full Stack Developer"
       },
       "unmsm": {
         "desc_1": "Committed to full academic software engineering syllabus, graduating with high grades by focusing on web development, systems designs, and databases administration.",
+        "location": "Lima, Peru",
         "role": "Bachelor in Software Engineering"
       }
     },
     "jump_to": "Go to year:",
     "present": "Present",
     "subtitle": "Horizontal Gantt-style timeline. Choose any bar to expand detailed impacts under Google's XYZ formula.",
-    "title": "Journey Chronology"
+    "title": "Journey Chronology",
+    "types": {
+      "education": "Education",
+      "work": "Work"
+    }
   }
 }

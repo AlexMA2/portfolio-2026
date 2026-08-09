@@ -121,8 +121,8 @@
             <div 
               class="experience-timeline__bar"
               [class.experience-timeline__bar--selected]="selectedItemId() === item.id"
-              [class.experience-timeline__bar--work]="item.type === 'work'"
-              [class.experience-timeline__bar--education]="item.type === 'education'"
+              [class.experience-timeline__bar--work]="item.type.endsWith('work')"
+              [class.experience-timeline__bar--education]="item.type.endsWith('education')"
               [style.left.%]="item.left"
               [style.width.%]="item.width"
               [style.top.px]="item.row * 95 + 40"
@@ -154,7 +154,7 @@
       >
         <div class="experience-timeline__details-header">
           <div>
-            <span class="experience-timeline__details-type">{{ active.type | uppercase }}</span>
+            <span class="experience-timeline__details-type">{{ active.type | transloco | uppercase }}</span>
             <h3 class="experience-timeline__details-title">{{ active.role | transloco }}</h3>
             <div class="experience-timeline__details-meta">
               <span class="experience-timeline__details-company">{{ active.company }}</span>
@@ -163,7 +163,7 @@
                 @if (active.countryCode) {
                   <span class="fi fi-{{ active.countryCode }} experience-timeline__details-flag"></span>
                 }
-                {{ active.location }}
+                {{ active.location | transloco }}
               </span>
               <span class="experience-timeline__details-divider">|</span>
               <span class="experience-timeline__details-period">{{ active.displayPeriod }}</span>

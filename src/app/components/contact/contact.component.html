@@ -57,11 +57,21 @@
           </span>
           <div>
             <span class="contact-section__info-label">Email</span>
-            <a
-              href="mailto:alex_162001@hotmail.com"
-              class="contact-section__info-value contact-section__info-value--link"
-              >alex_162001@hotmail.com</a
-            >
+            @if (emailRevealed()) {
+              <a
+                [href]="getEmailLink()"
+                class="contact-section__info-value contact-section__info-value--link"
+                >{{ getEmail() }}</a
+              >
+            } @else {
+              <button
+                type="button"
+                (click)="revealEmail()"
+                class="contact-section__info-reveal-btn"
+              >
+                {{ 'contact.reveal_email' | transloco }}
+              </button>
+            }
           </div>
         </li>
         <li class="contact-section__info-item">
@@ -83,11 +93,21 @@
           </span>
           <div>
             <span class="contact-section__info-label">Phone</span>
-            <a
-              href="tel:+51981292656"
-              class="contact-section__info-value contact-section__info-value--link"
-              >+51 981 292 656</a
-            >
+            @if (phoneRevealed()) {
+              <a
+                [href]="'tel:+' + getRawPhone()"
+                class="contact-section__info-value contact-section__info-value--link"
+                >{{ getFormattedPhone() }}</a
+              >
+            } @else {
+              <button
+                type="button"
+                (click)="revealPhone()"
+                class="contact-section__info-reveal-btn"
+              >
+                {{ 'contact.reveal_phone' | transloco }}
+              </button>
+            }
           </div>
         </li>
       </ul>

@@ -8,7 +8,7 @@ export interface TimelineItem {
   startYear: number;
   endMonth: number;   // 1-12
   endYear: number;     // 0 if Present
-  type: 'work' | 'education';
+  type: string;
   description: string[];
 }
 

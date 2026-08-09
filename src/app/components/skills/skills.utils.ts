@@ -5,7 +5,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'angular',
     name: 'Angular 19+',
     category: 'frontend',
-    level: 'Expert',
+    level: 'skills.levels.expert',
     description: 'skills.items.angular.description',
     connections: ['typescript', 'ngrx', 'nx', 'testing'],
     experience: 'skills.items.angular.experience'
@@ -14,7 +14,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'react',
     name: 'React 18+ / Next.js',
     category: 'frontend',
-    level: 'Advanced',
+    level: 'skills.levels.advanced',
     description: 'skills.items.react.description',
     connections: ['typescript', 'redux', 'productivity'],
     experience: 'skills.items.react.experience'
@@ -23,7 +23,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'typescript',
     name: 'TypeScript',
     category: 'frontend',
-    level: 'Expert',
+    level: 'skills.levels.expert',
     description: 'skills.items.typescript.description',
     connections: ['angular', 'react', 'node'],
     experience: 'skills.items.typescript.experience'
@@ -32,7 +32,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'tailwind',
     name: 'Tailwind CSS',
     category: 'frontend',
-    level: 'Expert',
+    level: 'skills.levels.expert',
     description: 'skills.items.tailwind.description',
     connections: ['angular', 'react'],
     experience: 'skills.items.tailwind.experience'
@@ -41,7 +41,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'ngrx',
     name: 'NgRx / Redux',
     category: 'frontend',
-    level: 'Advanced',
+    level: 'skills.levels.advanced',
     description: 'skills.items.ngrx.description',
     connections: ['angular', 'react'],
     experience: 'skills.items.ngrx.experience'
@@ -50,7 +50,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'nx',
     name: 'Nx Monorepos',
     category: 'frontend',
-    level: 'Advanced',
+    level: 'skills.levels.advanced',
     description: 'skills.items.nx.description',
     connections: ['angular'],
     experience: 'skills.items.nx.experience'
@@ -59,7 +59,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'node',
     name: 'Node.js',
     category: 'backend',
-    level: 'Advanced',
+    level: 'skills.levels.advanced',
     description: 'skills.items.node.description',
     connections: ['typescript', 'postgresql', 'mongodb'],
     experience: 'skills.items.node.experience'
@@ -68,7 +68,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'dotnet',
     name: '.NET',
     category: 'backend',
-    level: 'Advanced',
+    level: 'skills.levels.advanced',
     description: 'skills.items.dotnet.description',
     connections: ['postgresql'],
     experience: 'skills.items.dotnet.experience'
@@ -77,7 +77,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'aws',
     name: 'AWS Cloud',
     category: 'backend',
-    level: 'Advanced',
+    level: 'skills.levels.advanced',
     description: 'skills.items.aws.description',
     connections: ['node', 'productivity'],
     experience: 'skills.items.aws.experience'
@@ -86,7 +86,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'postgresql',
     name: 'PostgreSQL / Mongo',
     category: 'backend',
-    level: 'Advanced',
+    level: 'skills.levels.advanced',
     description: 'skills.items.postgresql.description',
     connections: ['node', 'dotnet'],
     experience: 'skills.items.postgresql.experience'
@@ -95,7 +95,7 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'testing',
     name: 'Unit & E2E Testing',
     category: 'testing',
-    level: 'Expert',
+    level: 'skills.levels.expert',
     description: 'skills.items.testing.description',
     connections: ['angular', 'react'],
     experience: 'skills.items.testing.experience'
@@ -104,10 +104,9 @@ export const INITIAL_SKILLS: SkillNode[] = [
     id: 'productivity',
     name: 'AI-Guided Dev & CI',
     category: 'productivity',
-    level: 'Expert',
+    level: 'skills.levels.expert',
     description: 'skills.items.productivity.description',
     connections: ['aws', 'testing'],
     experience: 'skills.items.productivity.experience'
   }
 ];
-

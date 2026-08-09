@@ -109,6 +109,24 @@
     }
   }
 
+  &__info-reveal-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
   /* Connect Cards Grid Styling */
   &__cards-grid {
     display: grid;

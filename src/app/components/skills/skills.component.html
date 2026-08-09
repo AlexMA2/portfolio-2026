@@ -59,7 +59,7 @@
             <div class="skill-tree__node-accent" [attr.data-category]="node.category"></div>
             <div class="skill-tree__node-content">
               <span class="skill-tree__node-name">{{ node.name }}</span>
-              <span class="skill-tree__node-level" [attr.data-level]="node.level">{{ node.level }}</span>
+              <span class="skill-tree__node-level" [attr.data-level]="node.level">{{ node.level | transloco }}</span>
             </div>
           </div>
         }
@@ -72,7 +72,7 @@
         <div class="skill-tree__details-card">
           <div class="skill-tree__details-header">
             <span class="skill-tree__details-category">{{ active.category | uppercase }}</span>
-            <span class="skill-tree__details-badge" [attr.data-level]="active.level">{{ active.level }}</span>
+            <span class="skill-tree__details-badge" [attr.data-level]="active.level">{{ active.level | transloco }}</span>
           </div>
           
           <h3 class="skill-tree__details-title">{{ active.name }}</h3>
