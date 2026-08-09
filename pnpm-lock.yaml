@@ -57,6 +57,9 @@ importers:
       '@angular/compiler-cli':
         specifier: ^21.1.0
         version: 21.2.17(@angular/compiler@21.2.17)(typescript@5.9.3)
+      '@netlify/angular-runtime':
+        specifier: ^4.0.0
+        version: 4.0.0
       '@tailwindcss/postcss':
         specifier: ^4.1.12
         version: 4.3.1
@@ -1131,6 +1134,18 @@ packages:
     peerDependencies:
       '@emnapi/core': ^1.7.1
       '@emnapi/runtime': ^1.7.1
+
+  '@netlify/angular-runtime@4.0.0':
+    resolution: {integrity: sha512-VrFrzw0MbLWLCG853dJM5gHDg2uRMBWuedEb1DfLDNyja/dQnmQTMPE2ke9QTbebFA01T0aynM0aeU7DyinPOQ==}
+    engines: {node: ^22.22.0 || ^24.13.1 || >=26.0.0}
+
+  '@netlify/edge-functions@3.0.8':
+    resolution: {integrity: sha512-ml1oCDsRTTRmZS2nUj8XRD1b6+foEiZT3lPk7qQ4nv/jnxylHJ20ooPzPDH+cJmGjXFrMeR14/91W1o6D2ftBg==}
+    engines: {node: '>=18.0.0'}
+
+  '@netlify/types@2.8.0':
+    resolution: {integrity: sha512-8/g0Pt6y6wXj5Ia5eeYLiXhRfWeqZXGXpGFeCiiQdUOem+FPtXdA4+YdGxqzWc7D0AvptKSO01KGeeVWHSu8Kg==}
+    engines: {node: ^18.14.0 || >=20}
 
   '@ngneat/transloco-utils@5.0.0':
     resolution: {integrity: sha512-e0S+GWyBTmLix9KfYWW/rScYdqQz3z3znNSb+foaA5T3jWs4CPLVo+PV0No7kGjqom8Wy8H3lLvztfhHxYSLyA==}
@@ -4347,6 +4362,17 @@ snapshots:
       '@tybys/wasm-util': 0.10.3
     optional: true
 
+  '@netlify/angular-runtime@4.0.0':
+    dependencies:
+      '@netlify/edge-functions': 3.0.8
+      semver: 7.8.5
+
+  '@netlify/edge-functions@3.0.8':
+    dependencies:
+      '@netlify/types': 2.8.0
+
+  '@netlify/types@2.8.0': {}
+
   '@ngneat/transloco-utils@5.0.0(typescript@5.9.3)':
     dependencies:
       cosmiconfig: 8.3.6(typescript@5.9.3)
@@ -4380,7 +4406,7 @@ snapshots:
 
   '@npmcli/fs@5.0.0':
     dependencies:
-      semver: 7.7.4
+      semver: 7.8.5
 
   '@npmcli/git@7.0.2':
     dependencies:
@@ -4390,7 +4416,7 @@ snapshots:
       lru-cache: 11.5.1
       npm-pick-manifest: 11.0.3
       proc-log: 6.1.0
-      semver: 7.7.4
+      semver: 7.8.5
       which: 6.0.1
 
   '@npmcli/installed-package-contents@4.0.0':
@@ -4407,7 +4433,7 @@ snapshots:
       hosted-git-info: 9.0.3
       json-parse-even-better-errors: 5.0.0
       proc-log: 6.1.0
-      semver: 7.7.4
+      semver: 7.8.5
       spdx-expression-parse: 4.0.0
 
   '@npmcli/promise-spawn@9.0.1':
@@ -5862,7 +5888,7 @@ snapshots:
       graceful-fs: 4.2.11
       nopt: 9.0.0
       proc-log: 6.1.0
-      semver: 7.7.4
+      semver: 7.8.5
       tar: 7.5.17
       tinyglobby: 0.2.17
       undici: 6.27.0
@@ -5880,7 +5906,7 @@ snapshots:
 
   npm-install-checks@8.0.0:
     dependencies:
-      semver: 7.7.4
+      semver: 7.8.5
 
   npm-normalize-package-bin@5.0.0: {}
 
@@ -5901,7 +5927,7 @@ snapshots:
       npm-install-checks: 8.0.0
       npm-normalize-package-bin: 5.0.0
       npm-package-arg: 13.0.2
-      semver: 7.7.4
+      semver: 7.8.5
 
   npm-registry-fetch@19.1.1:
     dependencies:
