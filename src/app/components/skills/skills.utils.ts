@@ -6,107 +6,108 @@ export const INITIAL_SKILLS: SkillNode[] = [
     name: 'Angular 19+',
     category: 'frontend',
     level: 'Expert',
-    description: 'Used for architecting high-performance enterprise applications, including custom directive frameworks and dynamic, metadata-driven form systems.',
+    description: 'skills.items.angular.description',
     connections: ['typescript', 'ngrx', 'nx', 'testing'],
-    experience: 'Big Pebble Design, Invian SAC, LastM Viz Group, Calculator Game'
+    experience: 'skills.items.angular.experience'
   },
   {
     id: 'react',
     name: 'React 18+ / Next.js',
     category: 'frontend',
     level: 'Advanced',
-    description: 'Leveraged for modern static and SSR web apps, integrating state management and API routes.',
+    description: 'skills.items.react.description',
     connections: ['typescript', 'redux', 'productivity'],
-    experience: 'Monkey Code, Personal Projects'
+    experience: 'skills.items.react.experience'
   },
   {
     id: 'typescript',
     name: 'TypeScript',
     category: 'frontend',
     level: 'Expert',
-    description: 'Core programming language for frontend and backend logic. Enforces strict type safety and scale-ready codebases.',
+    description: 'skills.items.typescript.description',
     connections: ['angular', 'react', 'node'],
-    experience: 'Big Pebble Design, Invian SAC, LastM Viz Group'
+    experience: 'skills.items.typescript.experience'
   },
   {
     id: 'tailwind',
     name: 'Tailwind CSS',
     category: 'frontend',
     level: 'Expert',
-    description: 'Utility-first CSS styling for highly responsive, clean layouts and custom design systems.',
+    description: 'skills.items.tailwind.description',
     connections: ['angular', 'react'],
-    experience: 'Big Pebble Design, Invian SAC'
+    experience: 'skills.items.tailwind.experience'
   },
   {
     id: 'ngrx',
     name: 'NgRx / Redux',
     category: 'frontend',
     level: 'Advanced',
-    description: 'State management patterns for Angular and React to handle complex, scalable data flows.',
+    description: 'skills.items.ngrx.description',
     connections: ['angular', 'react'],
-    experience: 'Big Pebble Design'
+    experience: 'skills.items.ngrx.experience'
   },
   {
     id: 'nx',
     name: 'Nx Monorepos',
     category: 'frontend',
     level: 'Advanced',
-    description: 'Monorepo toolset used to scale codebases across multiple applications and shared libraries, simplifying build setups.',
+    description: 'skills.items.nx.description',
     connections: ['angular'],
-    experience: 'Big Pebble Design'
+    experience: 'skills.items.nx.experience'
   },
   {
     id: 'node',
     name: 'Node.js',
     category: 'backend',
     level: 'Advanced',
-    description: 'Building fast RESTful APIs and asynchronous backends, including third-party integrations.',
+    description: 'skills.items.node.description',
     connections: ['typescript', 'postgresql', 'mongodb'],
-    experience: 'Big Pebble Design, Personal Projects'
+    experience: 'skills.items.node.experience'
   },
   {
     id: 'dotnet',
     name: '.NET',
     category: 'backend',
     level: 'Advanced',
-    description: 'Full stack development of secure, scalable APIs and enterprise integration logic.',
+    description: 'skills.items.dotnet.description',
     connections: ['postgresql'],
-    experience: 'Big Pebble Design'
+    experience: 'skills.items.dotnet.experience'
   },
   {
     id: 'aws',
     name: 'AWS Cloud',
     category: 'backend',
     level: 'Advanced',
-    description: 'Deploying and managing microservices using Lambda, S3, RDS, and API Gateway.',
+    description: 'skills.items.aws.description',
     connections: ['node', 'productivity'],
-    experience: 'Monkey Code'
+    experience: 'skills.items.aws.experience'
   },
   {
     id: 'postgresql',
     name: 'PostgreSQL / Mongo',
     category: 'backend',
     level: 'Advanced',
-    description: 'Relational database designs, query optimization, and NoSQL storage with Firestore and MongoDB.',
+    description: 'skills.items.postgresql.description',
     connections: ['node', 'dotnet'],
-    experience: 'Big Pebble Design, LastM Viz Group'
+    experience: 'skills.items.postgresql.experience'
   },
   {
     id: 'testing',
     name: 'Unit & E2E Testing',
     category: 'testing',
     level: 'Expert',
-    description: 'Comprehensive test coverage using Karma, Jest, Cypress, and custom browser extensions to optimize CI pipelines.',
+    description: 'skills.items.testing.description',
     connections: ['angular', 'react'],
-    experience: 'Big Pebble Design, Invian SAC'
+    experience: 'skills.items.testing.experience'
   },
   {
     id: 'productivity',
     name: 'AI-Guided Dev & CI',
     category: 'productivity',
     level: 'Expert',
-    description: 'Maximizing development productivity using advanced AI tools (Claude Code, Gemini) and building customized GitHub actions pipelines.',
+    description: 'skills.items.productivity.description',
     connections: ['aws', 'testing'],
-    experience: 'Big Pebble Design, Workspace Automation'
+    experience: 'skills.items.productivity.experience'
   }
 ];
+

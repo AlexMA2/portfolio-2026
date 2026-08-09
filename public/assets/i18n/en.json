@@ -1,82 +1,180 @@
 {
-  "nav": {
-    "about": "About",
-    "skills": "Skills",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
+  "contact": {
+    "copyright": "© 2026 Alex Mamani. All rights reserved.",
+    "email": "Email",
+    "email_action": "Send Email",
+    "email_body": "Hi Alex,\n\nI saw your portfolio and would like to get in touch regarding...",
+    "email_desc": "Detailed project inquiries",
+    "email_subject": "Inquiry from Portfolio",
+    "err_email": "Provide a valid email.",
+    "err_msg": "Message is required.",
+    "err_name": "Name is required.",
+    "github": "GitHub",
+    "github_action": "View Repositories",
+    "github_desc": "Open-source work & repositories",
+    "info_desc": "Feel free to contact me via phone, email, or GitHub. I am always open to exploring new engineering opportunities.",
+    "info_title": "Contact Information",
+    "label_email": "Email Address",
+    "label_message": "Message",
+    "label_name": "Full Name",
+    "linkedin": "LinkedIn",
+    "linkedin_action": "Let's Connect",
+    "linkedin_desc": "Professional network & profile",
+    "placeholder_email": "you@example.com",
+    "placeholder_message": "Tell me about your project...",
+    "placeholder_name": "Your name",
+    "submit": "Send Message",
+    "subtitle": "Have a project, job opening, or want to say hello? Drop a message or reach out through my direct links.",
+    "success_desc": "Thank you for reaching out. I'll get back to you shortly.",
+    "success_title": "Message Sent!",
+    "title": "Get In Touch",
+    "whatsapp": "WhatsApp",
+    "whatsapp_action": "Send Message",
+    "whatsapp_desc": "Quick chat & instant message",
+    "whatsapp_msg": "Hi Alex, I saw your portfolio and would like to connect!"
   },
   "hero": {
     "badge": "Available for Remote Work",
-    "title_1": "Building High-Performance",
-    "title_2": "Full Stack Applications",
-    "subtitle": "Software Engineer specializing in scalable web/mobile architectures, Angular 19+, React, NestJS, .NET, and AWS infrastructure integration.",
-    "desc": "Hi, I'm Alex Sebastian Mamani Acurio. I design and build modular interfaces, create custom browser extensions to optimize CI pipelines, and integrate complex third-party features to build robust developer tooling and digital platforms.",
     "cta_contact": "Get In Touch",
-    "cta_projects": "View Projects"
+    "cta_projects": "View Projects",
+    "desc": "Hi, I'm Alex Mamani. I design and build modular interfaces, create custom browser extensions to optimize CI pipelines, and integrate complex third-party features to build robust developer tooling and digital platforms.",
+    "subtitle": "Software Engineer specializing in scalable web/mobile architectures, Angular 19+, React, NestJS, .NET, and AWS infrastructure integration.",
+    "title_1": "Building High-Performance",
+    "title_2": "Full Stack Applications"
   },
-  "skills": {
-    "title": "Tech-Stack Skill Tree",
-    "subtitle": "Click on any node to view details, usage history, and how technologies connect across the lifecycle.",
-    "all": "All Technologies",
-    "frontend": "Frontend",
-    "backend": "Backend & Cloud",
-    "testing": "Testing & Quality",
-    "productivity": "AI & DevOps",
-    "experience_title": "Practical Experience",
-    "ecosystem_title": "Connected Ecosystem"
-  },
-  "timeline": {
-    "title": "Journey Chronology",
-    "subtitle": "Horizontal Gantt-style timeline. Choose any bar to expand detailed impacts under Google's XYZ formula.",
-    "jump_to": "Go to year:",
-    "details_updated": "Details updated below for:",
-    "impact_title": "Impact & Results",
-    "desde": "Since",
-    "hasta": "To",
-    "present": "Present"
+  "nav": {
+    "about": "About",
+    "contact": "Contact",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills"
   },
   "projects": {
-    "title": "Featured Projects",
-    "subtitle": "A selection of my recent work, including open-source tools and active development modules",
     "all": "All Projects",
     "completed": "Completed",
+    "demo": "Live Demo",
     "in_progress": "In Progress",
+    "items": {
+      "calculator": {
+        "description": "An engaging web application to improve mathematical speed-solving routines. Implemented real-time scoreboards, dynamic problem generation, and session profiles.",
+        "subtitle": "Interactive Speed Calculation App"
+      },
+      "monkeycode": {
+        "description": "Minimalist speed-typing testing simulator for developers. Incorporates source code snippets, speed metrics (WPM, Accuracy), authentication dashboards, and user performance progress records.",
+        "subtitle": "Developer Typetest Simulator"
+      },
+      "syncroute": {
+        "description": "A cross-platform database synchronization module for Capacitor and web clients. Syncs offline-local SQLite/IndexDB changes with remote PostgreSQL/MongoDB instances using automated conflict resolution and optimized compression.",
+        "subtitle": "Offline-First Mobile & Web Sync Engine"
+      },
+      "uiforge": {
+        "description": "A visual designer application translating drag-and-drop wireframes directly into standard Angular 19+ standalone components. Generates fully tree-shakable code styled with Tailwind CSS, utilizing schema-based templates.",
+        "subtitle": "AI Angular Visual Builder"
+      }
+    },
     "repository": "Repository",
-    "demo": "Live Demo"
+    "subtitle": "A selection of my recent work, including open-source tools and active development modules",
+    "title": "Featured Projects"
   },
-  "contact": {
-    "title": "Get In Touch",
-    "subtitle": "Have a project, job opening, or want to say hello? Drop a message or reach out through my direct links.",
-    "info_title": "Contact Information",
-    "info_desc": "Feel free to contact me via phone, email, or GitHub. I am always open to exploring new engineering opportunities.",
-    "label_name": "Full Name",
-    "label_email": "Email Address",
-    "label_message": "Message",
-    "placeholder_name": "Your name",
-    "placeholder_email": "you@example.com",
-    "placeholder_message": "Tell me about your project...",
-    "submit": "Send Message",
-    "success_title": "Message Sent!",
-    "success_desc": "Thank you for reaching out. I'll get back to you shortly.",
-    "err_name": "Name is required.",
-    "err_email": "Provide a valid email.",
-    "err_msg": "Message is required.",
-    "copyright": "© 2026 Alex Mamani. All rights reserved.",
-    "linkedin": "LinkedIn",
-    "linkedin_desc": "Professional network & profile",
-    "linkedin_action": "Let's Connect",
-    "github": "GitHub",
-    "github_desc": "Open-source work & repositories",
-    "github_action": "View Repositories",
-    "whatsapp": "WhatsApp",
-    "whatsapp_desc": "Quick chat & instant message",
-    "whatsapp_action": "Send Message",
-    "email": "Email",
-    "email_desc": "Detailed project inquiries",
-    "email_action": "Send Email",
-    "whatsapp_msg": "Hi Alex, I saw your portfolio and would like to connect!",
-    "email_subject": "Inquiry from Portfolio",
-    "email_body": "Hi Alex,\n\nI saw your portfolio and would like to get in touch regarding..."
+  "skills": {
+    "all": "All Technologies",
+    "backend": "Backend & Cloud",
+    "ecosystem_title": "Connected Ecosystem",
+    "experience_title": "Practical Experience",
+    "frontend": "Frontend",
+    "items": {
+      "angular": {
+        "description": "Used for architecting high-performance enterprise applications, including custom directive frameworks and dynamic, metadata-driven form systems.",
+        "experience": "Big Pebble Design, Invian SAC, LastM Viz Group, Calculator Game"
+      },
+      "aws": {
+        "description": "Deploying and managing microservices using Lambda, S3, RDS, and API Gateway.",
+        "experience": "Monkey Code"
+      },
+      "dotnet": {
+        "description": "Full stack development of secure, scalable APIs and enterprise integration logic.",
+        "experience": "Big Pebble Design"
+      },
+      "ngrx": {
+        "description": "State management patterns for Angular and React to handle complex, scalable data flows.",
+        "experience": "Big Pebble Design"
+      },
+      "node": {
+        "description": "Building fast RESTful APIs and asynchronous backends, including third-party integrations.",
+        "experience": "Big Pebble Design, Personal Projects"
+      },
+      "nx": {
+        "description": "Monorepo toolset used to scale codebases across multiple applications and shared libraries, simplifying build setups.",
+        "experience": "Big Pebble Design"
+      },
+      "postgresql": {
+        "description": "Relational database designs, query optimization, and NoSQL storage with Firestore and MongoDB.",
+        "experience": "Big Pebble Design, LastM Viz Group"
+      },
+      "productivity": {
+        "description": "Maximizing development productivity using advanced AI tools (Claude Code, Gemini) and building customized GitHub actions pipelines.",
+        "experience": "Big Pebble Design, Workspace Automation"
+      },
+      "react": {
+        "description": "Leveraged for modern static and SSR web apps, integrating state management and API routes.",
+        "experience": "Monkey Code, Personal Projects"
+      },
+      "tailwind": {
+        "description": "Utility-first CSS styling for highly responsive, clean layouts and custom design systems.",
+        "experience": "Big Pebble Design, Invian SAC"
+      },
+      "testing": {
+        "description": "Comprehensive test coverage using Karma, Jest, Cypress, and custom browser extensions to optimize CI pipelines.",
+        "experience": "Big Pebble Design, Invian SAC"
+      },
+      "typescript": {
+        "description": "Core programming language for frontend and backend logic. Enforces strict type safety and scale-ready codebases.",
+        "experience": "Big Pebble Design, Invian SAC, LastM Viz Group"
+      }
+    },
+    "productivity": "AI & DevOps",
+    "subtitle": "Click on any node to view details, usage history, and how technologies connect across the lifecycle.",
+    "testing": "Testing & Quality",
+    "title": "Tech-Stack"
+  },
+  "software_engineer": "Software Engineer",
+  "timeline": {
+    "desde": "Since",
+    "details_updated": "Details updated below for:",
+    "hasta": "To",
+    "impact_title": "Impact & Results",
+    "items": {
+      "bluemarbel": {
+        "desc_1": "Optimized system speed and UI modularity, improving rendering efficiency by 15% by using Angular 19, Firebase, and Nx to construct critical platform modules.",
+        "desc_2": "Reduced developer code redundancy by 25% by designing custom directives and abstract standard reuse workflows.",
+        "desc_3": "Decreased testing time by 20% by building a bespoke browser extension to optimize continuous integration flows.",
+        "desc_4": "Reduced query authentication latency by 30% by developing a custom browser tool for Swagger integration.",
+        "role": "Full Stack / Front End Developer"
+      },
+      "britanico": {
+        "desc_1": "Certified advanced oral and written English proficiency, passing with Distinction level by completing a comprehensive 36-month language program.",
+        "role": "Advanced English"
+      },
+      "invian": {
+        "desc_1": "Boosted client platform adoption by 40% by leading graphical analysis and developing dynamic components using Angular 16 and Tailwind CSS.",
+        "desc_2": "Reduced visual template creation overhead by 50% by building metadata-driven dynamic forms and mapping modules for DOOH logistics.",
+        "desc_3": "Maximized layout processor output, scaling daily visual renders by 15% by structuring business rules for Digital Out-of-Home layouts.",
+        "role": "Front End Developer"
+      },
+      "lastm": {
+        "desc_1": "Acquired 10k+ platform registrations by designing, architecting, and deploying the company's landing page within Angular 14 and Firebase.",
+        "desc_2": "Created high-availability backend flows, achieving 99.9% uptime by utilizing Firebase Functions and Firestore.",
+        "desc_3": "Secured monetary checkouts, reducing abandonment by 18% by integrating PayPal API and reactive metrics panels.",
+        "role": "Full Stack Developer"
+      },
+      "unmsm": {
+        "desc_1": "Committed to full academic software engineering syllabus, graduating with high grades by focusing on web development, systems designs, and databases administration.",
+        "role": "Bachelor in Software Engineering"
+      }
+    },
+    "jump_to": "Go to year:",
+    "present": "Present",
+    "subtitle": "Horizontal Gantt-style timeline. Choose any bar to expand detailed impacts under Google's XYZ formula.",
+    "title": "Journey Chronology"
   }
 }

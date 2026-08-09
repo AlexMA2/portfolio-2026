@@ -4,27 +4,27 @@ export const INITIAL_PROJECTS: Project[] = [
   {
     id: 'syncroute',
     title: 'SyncRoute',
-    subtitle: 'Offline-First Mobile & Web Sync Engine',
+    subtitle: 'projects.items.syncroute.subtitle',
     status: 'IN_PROGRESS',
-    description: 'A cross-platform database synchronization module for Capacitor and web clients. Syncs offline-local SQLite/IndexDB changes with remote PostgreSQL/MongoDB instances using automated conflict resolution and optimized compression.',
+    description: 'projects.items.syncroute.description',
     technologies: ['TypeScript', 'SQLite', 'IndexedDB', 'Capacitor', 'Node.js', 'RxJS'],
     githubUrl: 'https://github.com/AlexMA2/syncroute'
   },
   {
     id: 'uiforge',
     title: 'UI-Forge',
-    subtitle: 'AI Angular Visual Builder',
+    subtitle: 'projects.items.uiforge.subtitle',
     status: 'IN_PROGRESS',
-    description: 'A visual designer application translating drag-and-drop wireframes directly into standard Angular 19+ standalone components. Generates fully tree-shakable code styled with Tailwind CSS, utilizing schema-based templates.',
+    description: 'projects.items.uiforge.description',
     technologies: ['Angular 19', 'Tailwind CSS', 'TypeScript', 'Node.js', 'Vite'],
     githubUrl: 'https://github.com/AlexMA2/ui-forge'
   },
   {
     id: 'calculator',
     title: 'Calculator Game',
-    subtitle: 'Interactive Speed Calculation App',
+    subtitle: 'projects.items.calculator.subtitle',
     status: 'COMPLETED',
-    description: 'An engaging web application to improve mathematical speed-solving routines. Implemented real-time scoreboards, dynamic problem generation, and session profiles.',
+    description: 'projects.items.calculator.description',
     technologies: ['Angular', 'Firebase Auth', 'Firestore', 'GraphQL', 'Tailwind CSS'],
     link: 'https://thecalculatorgame.netlify.app',
     githubUrl: 'https://github.com/AlexMA2/calculator-game'
@@ -32,11 +32,12 @@ export const INITIAL_PROJECTS: Project[] = [
   {
     id: 'monkeycode',
     title: 'Monkey Code',
-    subtitle: 'Developer Typetest Simulator',
+    subtitle: 'projects.items.monkeycode.subtitle',
     status: 'COMPLETED',
-    description: 'Minimalist speed-typing testing simulator for developers. Incorporates source code snippets, speed metrics (WPM, Accuracy), authentication dashboards, and user performance progress records.',
+    description: 'projects.items.monkeycode.description',
     technologies: ['React 18', 'NextJS', 'Clerk Auth', 'Tailwind CSS', 'AWS Lambda'],
     link: 'https://monkey-code-nine.vercel.app',
     githubUrl: 'https://github.com/AlexMA2/monkey-code'
   }
 ];
+

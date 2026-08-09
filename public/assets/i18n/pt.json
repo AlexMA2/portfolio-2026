@@ -1,82 +1,180 @@
 {
-  "nav": {
-    "about": "Sobre Mim",
-    "skills": "Habilidades",
-    "experience": "Experiência",
-    "projects": "Projetos",
-    "contact": "Contato"
+  "contact": {
+    "copyright": "© 2026 Alex Mamani. Todos os direitos reservados.",
+    "email": "E-mail",
+    "email_action": "Enviar E-mail",
+    "email_body": "Olá Alex,\n\nVi seu portfólio e gostaria de entrar em contato sobre...",
+    "email_desc": "Consultas detalhadas de projetos",
+    "email_subject": "Contato do Portfólio",
+    "err_email": "Forneça um e-mail válido.",
+    "err_msg": "A mensagem é obrigatória.",
+    "err_name": "O nome é obrigatório.",
+    "github": "GitHub",
+    "github_action": "Ver Repositórios",
+    "github_desc": "Trabalhos de código aberto e repositórios",
+    "info_desc": "Sinta-se à vontade para entrar em contato via telefone, e-mail ou GitHub. Estou sempre aberto a novas oportunidades.",
+    "info_title": "Informações de Contato",
+    "label_email": "Endereço de E-mail",
+    "label_message": "Mensagem",
+    "label_name": "Nome Completo",
+    "linkedin": "LinkedIn",
+    "linkedin_action": "Conectar",
+    "linkedin_desc": "Perfil e rede profissional",
+    "placeholder_email": "voce@exemplo.com",
+    "placeholder_message": "Fale-me sobre o seu projeto...",
+    "placeholder_name": "Seu nome",
+    "submit": "Enviar Mensagem",
+    "subtitle": "Tem um projeto, vaga ou quer dizer olá? Envie uma mensagem ou entre em contato pelos meus links diretos.",
+    "success_desc": "Obrigado pelo contato. Retornarei em breve.",
+    "success_title": "Mensagem Enviada!",
+    "title": "Entre em Contato",
+    "whatsapp": "WhatsApp",
+    "whatsapp_action": "Enviar Mensagem",
+    "whatsapp_desc": "Conversa rápida e mensagem instantânea",
+    "whatsapp_msg": "Olá Alex! Vi seu portfólio e gostaria de entrar em contato com você."
   },
   "hero": {
     "badge": "Disponível para Trabalho Remoto",
-    "title_1": "Construindo Aplicações",
-    "title_2": "Full Stack de Alto Desempenho",
-    "subtitle": "Engenheiro de Software especializado em arquiteturas web/móveis escaláveis, Angular 19+, React, NestJS, .NET e integração com AWS.",
-    "desc": "Olá, sou Alex Sebastian Mamani Acurio. Desenvolvo interfaces modulares, crio extensões personalizadas para otimizar pipelines de CI e integro serviços para construir plataformas robustas.",
     "cta_contact": "Contato",
-    "cta_projects": "Ver Projetos"
+    "cta_projects": "Ver Projetos",
+    "desc": "Olá, sou Alex Mamani. Desenvolvo interfaces modulares, crio extensões personalizadas para otimizar pipelines de CI e integro serviços para construir plataformas robustas.",
+    "subtitle": "Engenheiro de Software especializado em arquiteturas web/móveis escaláveis, Angular 19+, React, NestJS, .NET e integração com AWS.",
+    "title_1": "Construindo Aplicações",
+    "title_2": "Full Stack de Alto Desempenho"
   },
-  "skills": {
-    "title": "Tech-Stack Skill Tree",
-    "subtitle": "Clique em qualquer nó para ver detalhes, histórico de uso e conexões de tecnologia no ciclo de desenvolvimento.",
-    "all": "Todas as Tecnologias",
-    "frontend": "Frontend",
-    "backend": "Backend e Nuvem",
-    "testing": "Testes e Qualidade",
-    "productivity": "IA e DevOps",
-    "experience_title": "Experiência Prática",
-    "ecosystem_title": "Ecossistema Conectado"
-  },
-  "timeline": {
-    "title": "Cronograma de Experiência",
-    "subtitle": "Linha do tempo horizontal tipo Gantt. Selecione qualquer barra para ver as realizações sob a fórmula XYZ do Google.",
-    "jump_to": "Ir para o ano:",
-    "details_updated": "Detalhes atualizados abaixo para:",
-    "impact_title": "Impacto e Resultados",
-    "desde": "Desde",
-    "hasta": "Até",
-    "present": "Presente"
+  "nav": {
+    "about": "Sobre Mim",
+    "contact": "Contato",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "skills": "Habilidades"
   },
   "projects": {
-    "title": "Projetos em Destaque",
-    "subtitle": "Uma seleção dos meus trabalhos recentes, incluindo ferramentas de código aberto e módulos em desenvolvimento (IN_PROGRESS).",
     "all": "Todos os Projetos",
     "completed": "Concluídos",
-    "in_progress": "Em Progresso",
+    "demo": "Demo ao Vivo",
+    "in_progress": "Em Progreso",
+    "items": {
+      "calculator": {
+        "description": "Uma aplicação web envolvente para melhorar rotinas de resolução de velocidade matemática. Implementou placares em tempo real, geração dinâmica de problemas e perfis de sessão.",
+        "subtitle": "Aplicativo Interativo de Cálculo Rápido"
+      },
+      "monkeycode": {
+        "description": "Simulador minimalista de teste de velocidade de digitação para desenvolvedores. Incorpora trechos de código-fonte, métricas de velocidade (WPM, precisão), painéis de autenticação e registros de progresso de desempenho do usuário.",
+        "subtitle": "Simulador de Teste de Digitação para Desenvolvedores"
+      },
+      "syncroute": {
+        "description": "Um módulo de sincronização de banco de dados multiplataforma para Capacitor e clientes web. Sincroniza alterações locais offline do SQLite/IndexedDB com instâncias remotas do PostgreSQL/MongoDB usando resolução automática de conflitos e compressão otimizada.",
+        "subtitle": "Mecanismo de Sincronização Móvel e Web Offline-First"
+      },
+      "uiforge": {
+        "description": "Uma aplicação de design visual que traduz wireframes do tipo arrastar e soltar diretamente em componentes standalone padrão do Angular 19+. Gera código totalmente tree-shakable estilizado com Tailwind CSS usando modelos baseados em esquema.",
+        "subtitle": "Construtor Visual Angular com IA"
+      }
+    },
     "repository": "Código Fonte",
-    "demo": "Demo ao Vivo"
+    "subtitle": "Uma seleção dos meus trabalhos recentes, incluindo ferramentas de código aberto e módulos em desenvolvimento",
+    "title": "Projetos em Destaque"
   },
-  "contact": {
-    "title": "Entre em Contato",
-    "subtitle": "Tem um projeto, vaga ou quer dizer olá? Envie uma mensagem ou entre em contato pelos meus links diretos.",
-    "info_title": "Informações de Contato",
-    "info_desc": "Sinta-se à vontade para entrar em contato via telefone, e-mail ou GitHub. Estou sempre aberto a novas oportunidades.",
-    "label_name": "Nome Completo",
-    "label_email": "Endereço de E-mail",
-    "label_message": "Mensagem",
-    "placeholder_name": "Seu nome",
-    "placeholder_email": "voce@exemplo.com",
-    "placeholder_message": "Fale-me sobre o seu projeto...",
-    "submit": "Enviar Mensagem",
-    "success_title": "Mensagem Enviada!",
-    "success_desc": "Obrigado pelo contato. Retornarei em breve.",
-    "err_name": "O nome é obrigatório.",
-    "err_email": "Forneça um e-mail válido.",
-    "err_msg": "A mensagem é obrigatória.",
-    "copyright": "© 2026 Alex Mamani. Todos os direitos reservados.",
-    "linkedin": "LinkedIn",
-    "linkedin_desc": "Perfil e rede profissional",
-    "linkedin_action": "Conectar",
-    "github": "GitHub",
-    "github_desc": "Trabalhos de código aberto e repositórios",
-    "github_action": "Ver Repositórios",
-    "whatsapp": "WhatsApp",
-    "whatsapp_desc": "Conversa rápida e mensagem instantânea",
-    "whatsapp_action": "Enviar Mensagem",
-    "email": "E-mail",
-    "email_desc": "Consultas detalhadas de projetos",
-    "email_action": "Enviar E-mail",
-    "whatsapp_msg": "Olá Alex! Vi seu portfólio e gostaria de entrar em contato com você.",
-    "email_subject": "Contato do Portfólio",
-    "email_body": "Olá Alex,\n\nVi seu portfólio e gostaria de entrar em contato sobre..."
+  "skills": {
+    "all": "Todas as Tecnologias",
+    "backend": "Backend e Nuvem",
+    "ecosystem_title": "Ecossistema Conectado",
+    "experience_title": "Experiência Prática",
+    "frontend": "Frontend",
+    "items": {
+      "angular": {
+        "description": "Usado para arquitetar aplicações empresariais de alto desempenho, incluindo frameworks de diretivas personalizadas e sistemas de formulários dinâmicos baseados em metadados.",
+        "experience": "Big Pebble Design, Invian SAC, LastM Viz Group, Calculator Game"
+      },
+      "aws": {
+        "description": "Implantação e gerenciamento de microsserviços usando Lambda, S3, RDS e API Gateway.",
+        "experience": "Monkey Code"
+      },
+      "dotnet": {
+        "description": "Desenvolvimento full stack de APIs seguras e escaláveis e lógica de integração empresarial.",
+        "experience": "Big Pebble Design"
+      },
+      "ngrx": {
+        "description": "Padrões de gerenciamento de estado para Angular e React para lidar com fluxos de dados complexos e escaláveis.",
+        "experience": "Big Pebble Design"
+      },
+      "node": {
+        "description": "Construção de APIs RESTful rápidas e backends assíncronos, incluindo integrações com terceiros.",
+        "experience": "Big Pebble Design, Projetos Pessoais"
+      },
+      "nx": {
+        "description": "Conjunto de ferramentas de monorepo usado para escalar bases de código em várias aplicações e bibliotecas compartilhadas.",
+        "experience": "Big Pebble Design"
+      },
+      "postgresql": {
+        "description": "Design de bancos de dados relacionais, otimização de consultas e armazenamento NoSQL com Firestore e MongoDB.",
+        "experience": "Big Pebble Design, LastM Viz Group"
+      },
+      "productivity": {
+        "description": "Maximizando a produtividade do desenvolvimento usando ferramentas avançadas de IA (Claude Code, Gemini) e construindo pipelines do GitHub Actions.",
+        "experience": "Big Pebble Design, Automação do Espaço de Trabalho"
+      },
+      "react": {
+        "description": "Utilizado para aplicações web modernas estáticas e SSR, integrando gerenciamento de estado e rotas de API.",
+        "experience": "Monkey Code, Projetos Pessoais"
+      },
+      "tailwind": {
+        "description": "Estilização CSS utility-first para layouts limpos, altamente responsivos e sistemas de design personalizados.",
+        "experience": "Big Pebble Design, Invian SAC"
+      },
+      "testing": {
+        "description": "Cobertura abrangente de testes usando Karma, Jest, Cypress e extensões de navegador personalizadas para otimizar pipelines de CI.",
+        "experience": "Big Pebble Design, Invian SAC"
+      },
+      "typescript": {
+        "description": "Linguagem de programação principal para lógica frontend e backend. Garante segurança de tipos estrita e bases de código escaláveis.",
+        "experience": "Big Pebble Design, Invian SAC, LastM Viz Group"
+      }
+    },
+    "productivity": "IA e DevOps",
+    "subtitle": "Clique em qualquer nó para ver detalhes, histórico de uso e conexões de tecnologia no ciclo de desenvolvimento.",
+    "testing": "Testes e Qualidade",
+    "title": "Tecnologias conhecidas"
+  },
+  "software_engineer": "Engenheiro de Software",
+  "timeline": {
+    "desde": "Desde",
+    "details_updated": "Detalhes atualizados abaixo para:",
+    "hasta": "Até",
+    "impact_title": "Impacto e Resultados",
+    "items": {
+      "bluemarbel": {
+        "desc_1": "Otimizei a velocidade do sistema e a modularidade da UI, melhorando a eficiência de renderização em 15% usando Angular 19, Firebase e Nx para construir módulos críticos.",
+        "desc_2": "Reduzi a redundância de código dos desenvolvedores em 25% projetando diretivas personalizadas e abstraindo fluxos de reutilização padrão.",
+        "desc_3": "Diminuí o tempo de teste em 20% construindo uma extensão de navegador sob medida para otimizar fluxos de integração contínua.",
+        "desc_4": "Reduzi a latência de autenticação de consulta em 30% desenvolvendo uma ferramenta de navegador personalizada para integração com o Swagger.",
+        "role": "Desenvolvedor Full Stack / Front End"
+      },
+      "britanico": {
+        "desc_1": "Certificado com proficiência avançada em inglês oral e escrito, aprovado com nível de Distinção ao concluir um programa linguístico abrangente de 36 meses.",
+        "role": "Inglês Avançado"
+      },
+      "invian": {
+        "desc_1": "Aumentei a adoção da plataforma de clientes em 40% liderando análises gráficas e desenvolvendo componentes dinâmicos com Angular 16 e Tailwind CSS.",
+        "desc_2": "Reduzi o custo de criação de modelos visuais em 50% construindo formulários dinâmicos baseados em metadatos e módulos de mapeamento para logística DOOH.",
+        "desc_3": "Maximizei a saída do processador de layout, escalando os renders visuais diários em 15% estruturando regras de negócios para formatos DOOH.",
+        "role": "Desenvolvedor Front End"
+      },
+      "lastm": {
+        "desc_1": "Conquistei mais de 10 mil registros na plataforma projetando, arquitetando e implantando a landing page da empresa em Angular 14 e Firebase.",
+        "desc_2": "Criei fluxos de backend de alta disponibilidade, atingindo 99,9% de tempo de atividade utilizando Firebase Functions e Firestore.",
+        "desc_3": "Garanti pagamentos monetários seguros, reduzindo o abandono em 18% integrando a API do PayPal e painéis de métricas reativos.",
+        "role": "Desenvolvedor Full Stack"
+      },
+      "unmsm": {
+        "desc_1": "Dedicado ao currículo acadêmico completo de engenharia de software, graduando-me com altas notas focando em desenvolvimento web, design de sistemas e administração de bancos de dados.",
+        "role": "Bacharel em Engenharia de Software"
+      }
+    },
+    "jump_to": "Ir para o ano:",
+    "present": "Presente",
+    "subtitle": "Linha do tempo horizontal tipo Gantt. Selecione qualquer barra para ver as realizações sob a fórmula XYZ do Google.",
+    "title": "Cronograma de Experiência"
   }
 }

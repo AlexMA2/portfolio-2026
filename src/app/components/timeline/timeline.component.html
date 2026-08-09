@@ -129,7 +129,7 @@
               (click)="selectItem(item.id)"
             >
               <div class="experience-timeline__bar-content">
-                <span class="experience-timeline__bar-role">{{ item.role }}</span>
+                <span class="experience-timeline__bar-role">{{ item.role | transloco }}</span>
                 <span class="experience-timeline__bar-company">{{ item.company }}</span>
                 <span class="experience-timeline__bar-date">
                   @if (item.countryCode) {
@@ -155,7 +155,7 @@
         <div class="experience-timeline__details-header">
           <div>
             <span class="experience-timeline__details-type">{{ active.type | uppercase }}</span>
-            <h3 class="experience-timeline__details-title">{{ active.role }}</h3>
+            <h3 class="experience-timeline__details-title">{{ active.role | transloco }}</h3>
             <div class="experience-timeline__details-meta">
               <span class="experience-timeline__details-company">{{ active.company }}</span>
               <span class="experience-timeline__details-divider">|</span>
@@ -175,7 +175,7 @@
           <h4 class="experience-timeline__details-subtitle">{{ 'timeline.impact_title' | transloco }}</h4>
           <ul class="experience-timeline__bullet-list">
             @for (bullet of active.description; track bullet) {
-              <li class="experience-timeline__bullet-item">{{ bullet }}</li>
+              <li class="experience-timeline__bullet-item">{{ bullet | transloco }}</li>
             }
           </ul>
         </div>

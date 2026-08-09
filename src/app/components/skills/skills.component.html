@@ -77,11 +77,11 @@
           
           <h3 class="skill-tree__details-title">{{ active.name }}</h3>
           
-          <p class="skill-tree__details-desc">{{ active.description }}</p>
+          <p class="skill-tree__details-desc">{{ active.description | transloco }}</p>
 
           <div class="skill-tree__details-section">
             <h4 class="skill-tree__details-subtitle">{{ 'skills.experience_title' | transloco }}</h4>
-            <p class="skill-tree__details-content">{{ active.experience }}</p>
+            <p class="skill-tree__details-content">{{ active.experience | transloco }}</p>
           </div>
 
           <div class="skill-tree__details-section">

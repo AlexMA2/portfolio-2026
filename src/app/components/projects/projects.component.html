@@ -39,7 +39,7 @@
         <div class="projects-portfolio__card-header">
           <div>
             <h3 class="projects-portfolio__card-title">{{ project.title }}</h3>
-            <p class="projects-portfolio__card-subtitle">{{ project.subtitle }}</p>
+            <p class="projects-portfolio__card-subtitle">{{ project.subtitle | transloco }}</p>
           </div>
           <span 
             class="projects-portfolio__status" 
@@ -49,7 +49,7 @@
           </span>
         </div>
 
-        <p class="projects-portfolio__desc">{{ project.description }}</p>
+        <p class="projects-portfolio__desc">{{ project.description | transloco }}</p>
 
         <div class="projects-portfolio__tags">
           @for (tech of project.technologies; track tech) {
