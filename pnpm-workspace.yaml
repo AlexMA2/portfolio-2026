@@ -1,2 +1,10 @@
 packages:
   - '.'
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - lmdb
+  - msgpackr-ext
+  - msgpackr-extract
+  - sharp

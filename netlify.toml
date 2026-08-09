@@ -1,0 +1,6 @@
+[build]
+  command = "pnpm install && pnpm build"
+  publish = "dist/portfolio-2026/browser"
+
+[build.environment]
+  PNPM_FLAGS = "--only-built-dependencies=@parcel/watcher,esbuild,lmdb,msgpackr-ext,msgpackr-extract,sharp"
