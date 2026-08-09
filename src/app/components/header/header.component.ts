@@ -1,6 +1,5 @@
 import { Component, HostListener, OnInit, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TranslocoService, TranslocoModule } from '@ngneat/transloco';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 
 interface LanguageOption {
   code: string;
@@ -11,7 +10,7 @@ interface LanguageOption {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslocoModule],
+  imports: [TranslocoModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

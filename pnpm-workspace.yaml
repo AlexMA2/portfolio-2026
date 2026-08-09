@@ -7,5 +7,3 @@ onlyBuiltDependencies:
   - lmdb
   - msgpackr-ext
   - sharp
-
-

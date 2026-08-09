@@ -1,20 +1,20 @@
-import { Component, signal, computed } from '@angular/core';
-import { CommonModule, UpperCasePipe } from '@angular/common';
+import { UpperCasePipe } from '@angular/common';
+import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslocoModule } from '@ngneat/transloco';
-import { TimelineItem, PositionedItem } from './timeline.model';
+import { PositionedItem, TimelineItem } from './timeline.model';
 import {
   INITIAL_TIMELINE_ITEMS,
-  MONTH_NAMES,
-  MIN_YEAR,
   MAX_YEAR,
+  MIN_YEAR,
+  MONTH_NAMES,
   TOTAL_MONTHS
 } from './timeline.utils';
 
 @Component({
   selector: 'app-timeline',
   standalone: true,
-  imports: [CommonModule, UpperCasePipe, FormsModule, TranslocoModule],
+  imports: [UpperCasePipe, FormsModule, TranslocoModule],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.scss'
 })
@@ -72,7 +72,7 @@ export class TimelineComponent {
       const endY = item.endYear || this.maxYear;
       const endM = item.endMonth || 6;
       const endOffset = getMonthOffset(endM, endY) + 1;
-      
+
       const left = (startOffset / this.totalMonths) * 100;
       const width = ((endOffset - startOffset) / this.totalMonths) * 100;
 
@@ -190,7 +190,7 @@ export class TimelineComponent {
   onYearInputChanged(event: Event) {
     const inputEl = event.target as HTMLInputElement;
     let val = parseInt(inputEl.value);
-    
+
     if (isNaN(val)) {
       inputEl.value = this.activeYear().toString();
       return;

@@ -1,5 +1,4 @@
-import { Component, signal, computed } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, computed, signal } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
 import { Project } from './projects.model';
 import { INITIAL_PROJECTS } from './projects.utils';
@@ -7,7 +6,7 @@ import { INITIAL_PROJECTS } from './projects.utils';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslocoModule],
+  imports: [TranslocoModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
