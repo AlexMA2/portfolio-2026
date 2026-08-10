@@ -1,6 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { TranslocoModule } from '@ngneat/transloco';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { take } from 'rxjs';
 import { HeaderComponent } from './components/header/header.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
@@ -24,7 +25,11 @@ import { ContactComponent } from './components/contact/contact.component';
 export class App implements OnInit {
   protected readonly title = signal('Alex Mamani | Senior Front End & Full Stack Developer');
 
-  constructor(private meta: Meta, private titleService: Title) { }
+  constructor(
+    private meta: Meta,
+    private titleService: Title,
+    private translocoService: TranslocoService
+  ) { }
 
   ngOnInit() {
     this.titleService.setTitle(this.title());
@@ -39,5 +44,15 @@ export class App implements OnInit {
       { property: 'og:type', content: 'profile' },
       { property: 'og:image', content: 'https://alexmamani.com/profile.jpg' }
     ]);
+
+    if (typeof window === 'undefined') return;
+
+    this.translocoService.selectTranslation().pipe(take(1)).subscribe(() => {
+      const splashScreen = document.getElementById('app-splash-screen');
+      if (splashScreen) {
+        splashScreen.classList.add('splash-hidden');
+        setTimeout(() => splashScreen.remove(), 600); // Wait for transition to finish
+      }
+    });
   }
 }
