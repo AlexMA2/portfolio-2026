@@ -8,7 +8,7 @@ export const INITIAL_PROJECTS: Project[] = [
     status: 'IN_PROGRESS',
     description: 'projects.items.fintech-playground.description',
     technologies: ['.NET 10', 'ASP.NET Core', 'Entity Framework Core', 'PostgreSQL', 'JWT', 'Scalar', 'Azure'],
-    githubUrl: 'https://github.com/AlexMA2/fintech-playground-api'
+    githubUrl: 'https://github.com/AlexMA2/fintechplayground-api'
   },
   {
     id: 'pizza-api-nest',
@@ -35,6 +35,7 @@ export const INITIAL_PROJECTS: Project[] = [
     status: 'COMPLETED',
     description: 'projects.items.custom-world-map.description',
     technologies: ['Angular', 'TurfJS', 'Tailwind CSS', 'ThreeJS', 'Angular Material', 'd3-geo'],
+    link: 'https://custom-world-map.netlify.app/',
     githubUrl: 'https://github.com/AlexMA2/custom-world-map'
   },
   {

@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit, signal } from '@angular/core';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { Location } from '@angular/common';
 
 interface LanguageOption {
   code: string;
@@ -25,7 +26,10 @@ export class HeaderComponent implements OnInit {
     { code: 'pt', label: 'Português', flagClass: 'br' }
   ]);
 
-  constructor(private translocoService: TranslocoService) { }
+  constructor(
+    private translocoService: TranslocoService,
+    private location: Location
+  ) { }
 
   ngOnInit() {
     if (typeof window !== 'undefined') {
@@ -36,10 +40,20 @@ export class HeaderComponent implements OnInit {
         this.setDarkMode();
       }
 
-      // Check saved language
-      const savedLang = localStorage.getItem('lang') || 'es';
-      this.currentLang.set(savedLang);
-      this.translocoService.setActiveLang(savedLang);
+      // Check saved language and URL
+      const path = this.location.path();
+      const urlLang = path.split('/')[1];
+      let initialLang = 'es';
+      
+      if (['es', 'en', 'pt'].includes(urlLang)) {
+        initialLang = urlLang;
+      } else {
+        initialLang = localStorage.getItem('lang') || 'es';
+      }
+
+      this.currentLang.set(initialLang);
+      this.translocoService.setActiveLang(initialLang);
+      this.location.replaceState(`/${initialLang}`);
     }
   }
 
@@ -62,6 +76,7 @@ export class HeaderComponent implements OnInit {
     if (typeof window !== 'undefined') {
       localStorage.setItem('lang', langCode);
     }
+    this.location.replaceState(`/${langCode}`);
   }
 
   getActiveLangOption(): LanguageOption {
